@@ -252,7 +252,7 @@ ideas = {
 			picture = generic_political_support
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 				production_speed_buildings_factor = 0.03
 			}
 		}
@@ -341,7 +341,7 @@ ideas = {
 			picture = generic_war_preparation
 
 			modifier = {
-				industrial_capacity_factory = 0.1
+				production_factory_max_efficiency_factor = 0.05
 			}
 		}
 	
@@ -966,6 +966,8 @@ ideas = {
 			picture = generic_production_bonus
 			allowed = {
 				always = no
+			
+
 			}
 
 			modifier = {
@@ -1122,6 +1124,7 @@ ideas = {
 			picture = ast_all_in
 			
 			modifier = {
+				local_building_slots_factor = 0.25
 				production_speed_infrastructure_factor = 0.1
 				production_speed_rail_way_factor = 0.1
 				production_speed_naval_base_factor = 0.1

@@ -318,6 +318,7 @@ if = {
 		has_dlc = "Poland: United and Ready"
 	}
 	add_ideas = {
+		No_invade
 		uncontrolled_exports
 		POL_april_constitution_1
 		POL_looming_peasants_strike
@@ -326,7 +327,6 @@ if = {
 		POL_Polish_Cipher_Bureau_Focus0
 		#POL_ludomil_rayski
 		POL_SEPEWE
-		partial_economic_mobilisation
 	}
 }
 
@@ -362,13 +362,13 @@ add_equipment_to_stockpile = {
 
 add_equipment_to_stockpile = {
 	type = infantry_equipment_0
-	amount = 13000
+	amount = 11000
 	producer = POL
 }
 
 add_equipment_to_stockpile = {
 	type = support_equipment_1
-	amount = 120
+	amount = 40
 	producer = POL
 }
 

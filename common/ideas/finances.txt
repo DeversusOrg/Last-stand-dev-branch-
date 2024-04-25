@@ -8,12 +8,10 @@ ideas = {
 		finances_army = {
 			
 			modifier = {
-				consumer_goods_factor = -0.05
 				war_support_factor = 0.05
-				production_speed_arms_factory_factor = 0.1
+				production_speed_arms_factory_factor = 0.05
 				production_speed_dockyard_factor = 0.1
 				production_speed_industrial_complex_factor = -0.1
-				political_power_factor = -0.1
 			}
 			
 			cost = 150
@@ -38,10 +36,8 @@ ideas = {
 
 		
 			modifier = {
-				political_power_factor = 0.1
-				consumer_goods_factor = 0.05
 				production_speed_infrastructure_factor = 0.15
-				production_speed_industrial_complex_factor = 0.1
+				production_speed_industrial_complex_factor = 0.05
 				stability_factor = 0.05
 				production_speed_arms_factory_factor = -0.1 
 				mobilization_speed = -0.20
@@ -99,11 +95,11 @@ ideas = {
 			}
 			
 			modifier = {
-				research_speed_factor = 0.2
+				research_speed_factor = 0.05
 				consumer_goods_factor = 0.15
-				production_factory_max_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
 				production_factory_efficiency_gain_factor = 0.05
-				political_power_factor = -0.15
+				political_power_factor = -0.20
 			}
 
 			cost = 150

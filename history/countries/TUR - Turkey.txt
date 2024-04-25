@@ -17,35 +17,29 @@ if = {
 }
 if = {
 	limit = {
-		has_dlc = "No Step Back"
+		has_dlc = "No Step Back"s
 	}
 	set_oob = "TUR_1936_nsb"
 }
-set_convoys = 20
-set_war_support = 0.4
-set_stability = 0.45		#was 55%, but Ataturk was the person rather holding the country together, other did succeed, but not too much - Fantom
-set_research_slots = 4
+set_cosmetic_tag = OTT_UNIFIED_neutrality
+set_war_support = 1
+set_stability = 1		#was 55%, but Ataturk was the person rather holding the country together, other did succeed, but not too much - Fantom
+set_research_slots = 1
 
 add_ideas = {
 	limited_conscription
 	export_focus
-	TUR_etatism_economy_law_idea
+	civilian_economy
 }
 if = {
 	limit = { has_dlc = "Battle for the Bosporus" }
 	add_ideas = {
-		TUR_sectarian_woes
-		TUR_kemalist_army_officers_limited_power_loyal_dud
-		TUR_disorganized_armed_forces_idea_dud
+		TUR_NO_PLAYER_BLACK_NATION
 	}
-	else = {
-		add_ideas = {
-			TUR_recovering_from_the_war_for_independence	
-		}
-	}
+	
 }
 
-set_cosmetic_tag = TUR_neutrality
+
 #if = {
 #	limit = { has_dlc = "Battle for the Bosporus" }
 	recruit_character = TUR_mustafa_kemal_ataturk
@@ -172,6 +166,23 @@ set_technology = {
 	
 	infantry_weapons = 1
 	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	improved_infantry_weapons = 1
+	advanced_infantry_weapons = 1
+	antiair1 = 1
+	antiair2 = 1
+	antiair3 = 1
+	interwar_antitank = 1
+	antitank1 = 1
+	antitank2 = 1
+	antiair4 = 1
+	antiair5 = 1
+	antitank3 = 1
+	antitank4 = 1
+	antitank5 = 1
+	mechanised_infantry = 1
+	amphibious_mechanized_infantry = 1
+	scout_plane1 = 1
 	tech_mountaineers = 1
 	tech_recon = 1
 	tech_support = 1
@@ -264,8 +275,7 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 10
-	neutrality = 90
+	neutrality = 100
 }
 
 # create_country_leader = {

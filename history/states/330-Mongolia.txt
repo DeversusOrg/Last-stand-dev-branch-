@@ -11,7 +11,7 @@ state={
 	}
 
 	history={
-		owner = MON
+		owner = TUR
 		victory_points = {
 			4801 10
 		}
@@ -24,8 +24,7 @@ state={
 			industrial_complex = 3
 			air_base = 1
 		}
-		add_core_of = MON
-		add_claim_by = CHI
+		add_core_of = TUR
 	}
 
 	provinces={

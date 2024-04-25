@@ -83,13 +83,7 @@ set_war_support = 0.1
 set_convoys = 400
 
 add_ideas = {
-	NOR_complacent_cabinet_ns
-	NOR_obsolete_armed_forces_ns_1
-	NOR_the_hard_thirties_ns
-	NOR_anti_communist_sentiment_ns
-	NOR_crumbling_fortifications_ns
-	NOR_birger_ljungberg
-	NOR_kristian_laake
+	sooo_game_speed_balance
 } 
 
 store_core_states_on_game_start = yes

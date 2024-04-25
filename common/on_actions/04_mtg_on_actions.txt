@@ -555,6 +555,11 @@ on_actions = {
 					give_resource_rights = { receiver = USA state = 479 }
 					give_resource_rights = { receiver = USA state = 480 }
 				}
+				TUR = {
+					give_resource_rights = { receiver = ENG state = 413 }
+					give_resource_rights = { receiver = ENG state = 291 }
+					give_resource_rights = { receiver = GER state = 666 }
+				}
 			}
 			# Game Rules - Decolonization
 			if = {
@@ -868,5 +873,8 @@ on_actions = {
 				}
 			}
 		}
+	}
+}	
+}
 	}
 }

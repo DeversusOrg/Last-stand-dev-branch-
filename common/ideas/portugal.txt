@@ -1,5 +1,33 @@
 ideas = {
 	country = {
+		Investments = {
+			picture = generic_foreign_capital
+
+			modifier = {
+				global_building_slots_factor = 0.25
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+
+
+		SPA_la_division_azul = {
+
+			picture = SPA_la_division_azul
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				send_volunteer_size = 999
+				send_volunteer_divisions_required = -0.25
+				send_volunteers_tension = -0.20
+			}
+		}
 		POR_civil_war_surrender_debuff = {
 			picture = generic_army_problems
 			allowed = {
@@ -118,7 +146,7 @@ ideas = {
 			
 			modifier = {
 				production_speed_buildings_factor = 0.05
-				consumer_goods_factor = -0.02
+				consumer_goods_factor = -0.1
 			}
 		}
 
@@ -433,7 +461,7 @@ ideas = {
 			modifier = {
 				trade_opinion_factor = 0.35
 				production_factory_efficiency_gain_factor = 0.1
-				consumer_goods_factor = -0.01
+				consumer_goods_factor = -0.05
 			}
 		}
 
@@ -449,7 +477,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = -0.01
+				consumer_goods_factor = -0.05
 				production_speed_industrial_complex_factor = 0.10
 			}
 		}
@@ -467,7 +495,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = -0.02
+				consumer_goods_factor = -0.05
 				production_speed_industrial_complex_factor = 0.10
 				drift_defence_factor = 0.15
 			}
@@ -487,7 +515,7 @@ ideas = {
 			
 			modifier = {
 				stability_weekly = 0.002
-				consumer_goods_factor = -0.02
+				consumer_goods_factor = -0.05
 				production_speed_industrial_complex_factor = 0.10
 				political_power_gain = 0.1
 				drift_defence_factor = 0.15
@@ -508,7 +536,7 @@ ideas = {
 			
 			modifier = {
 				stability_weekly = 0.005
-				consumer_goods_factor = -0.02
+				consumer_goods_factor = -0.05
 				production_speed_industrial_complex_factor = 0.10
 				political_power_gain = 0.2
 				drift_defence_factor = 0.15
@@ -529,7 +557,7 @@ ideas = {
 			
 			modifier = {
 				stability_weekly = 0.005
-				consumer_goods_factor = -0.02
+				consumer_goods_factor = -0.05
 				production_speed_industrial_complex_factor = 0.1
 				production_factory_max_efficiency_factor = 0.1
 				political_power_gain = 0.3

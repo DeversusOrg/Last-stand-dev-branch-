@@ -4,8 +4,8 @@ set_research_slots = 4
 
 oob = "BRA_1936"
 
-set_stability = 0.40
-set_war_support = 0.30
+set_stability = 0.60
+set_war_support = 0.60
 
 # Starting tech
 set_technology = {
@@ -22,7 +22,7 @@ set_technology = {
 	gw_artillery = 1
 	tech_support = 1
 	tech_trucks = 1
-motorised_infantry = 1
+    motorised_infantry = 1
 	basic_train = 1
 }
 if = {
@@ -105,11 +105,13 @@ if = {
 set_country_flag = monroe_doctrine
 
 add_ideas = { 
+	war_economy
 	bra_antropofagia
 	bra_bandeirantes
 	bra_1930 
 	bra_rural_elite
 }
+set_cosmetic_tag = FORM_SOU
 
 set_convoys = 100
 set_politics = {

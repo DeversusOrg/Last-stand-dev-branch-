@@ -117,7 +117,7 @@ ideas = {
 		modifier = {
 			conscription = 0.015
 			mobilization_speed = 0.15
-			command_power_gain_mult = -0.05
+			max_planning_factor = 0.15
 		}
 	}
 
@@ -384,7 +384,8 @@ ideas = {
 			picture = generic_goods_red_bonus
 
 			modifier = {
-				consumer_goods_factor = -0.15
+				production_factory_max_efficiency_factor = 0.1
+				consumer_goods_factor = -0.25
 			}
 
 		}
@@ -874,7 +875,7 @@ ideas = {
 			modifier = {
 				industrial_capacity_factory = 0.03
 				industrial_capacity_dockyard = 0.03
-				consumer_goods_factor = -0.03
+				consumer_goods_factor = -0.10
 				conscription_factor = -0.05
 			}
 
@@ -896,7 +897,7 @@ ideas = {
 			modifier = {
 				industrial_capacity_factory = 0.06
 				industrial_capacity_dockyard = 0.06
-				consumer_goods_factor = -0.08
+				consumer_goods_factor = -0.30
 				conscription_factor = -0.05
 			}
 

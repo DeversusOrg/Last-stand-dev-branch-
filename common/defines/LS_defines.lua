@@ -1,5 +1,4 @@
 NDefines.NFocus.FOCUS_POINT_DAYS = 3.5 -- 2x focuses
-
 NDefines.NDiplomacy.DIPLOMACY_REQUEST_EXPIRY_DAYS = 30
 NDefines.NDiplomacy.NUM_DAYS_TO_ENABLE_KICKING_NEW_MEMBERS_OF_FACTION = 1			-- Number of days before being able to kick a new member of faction
 NDefines.NDiplomacy.NUM_DAYS_TO_ENABLE_REINVITE_KICKED_NATIONS = 1			-- Number of days before being able to re invite a kicked nation to your faction
@@ -11,26 +10,30 @@ NDefines.NDiplomacy.MIN_WARGOAL_JUSTIFY_COST = 7.0					-- It always takes atleas
 NDefines.NDiplomacy.PEACE_SCORE_PER_PASS = 100.0
 ----------------------------------
 NDefines.NCountry.EVENT_PROCESS_OFFSET = 30						-- Events are checked every X day per country or state (1 is ideal, but CPU heavy)
-NDefines.NCountry.SPECIAL_FORCES_CAP_BASE = 0.2
-NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 40
 ----------------------------------
 NDefines.NProduction.EQUIPMENT_MODULE_ADD_XP_COST = 0					-- XP cost for adding a new equipment module in an empty slot when creating an equipment variant.
 NDefines.NProduction.EQUIPMENT_MODULE_REPLACE_XP_COST = 0				-- XP cost for replacing one equipment module with an unrelated module when creating an equipment variant.
 NDefines.NProduction.EQUIPMENT_MODULE_CONVERT_XP_COST = 0				-- XP cost for converting one equipment module to a related module when creating an equipment variant.
 NDefines.NProduction.EQUIPMENT_MODULE_REMOVE_XP_COST = 0				-- XP cost for removing an equipment module and leaving the slot empty when creating an equipment variant.
 NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 15000000
-NDefines.NProduction.DEFAULT_MAX_NAV_FACTORIES_PER_LINE = 100
-NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 100
-NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 100
+NDefines.NProduction.DEFAULT_MAX_NAV_FACTORIES_PER_LINE = 15
+NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 15
+NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 5
 NDefines.NProduction.RAILWAY_GUN_MAX_MIL_FACTORIES_PER_LINE = 30
-NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 3.0
+NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 3.7
 NDefines.NProduction.MINIMUM_NUMBER_OF_FACTORIES_TAKEN_BY_CONSUMER_GOODS_PERCENT = 0.05
+NDefines.NProduction.CAPITULATE_STOCKPILES_RATIO = 0
 ----------------------------------
 NDefines.NTechnology.MAX_SUBTECHS = 4						-- Max number of sub technologies a technology can have.
 NDefines.NTechnology.BASE_RESEARCH_POINTS_SAVED = 50.0 --#base game 30 changed to 50 and then why not 56?
 NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 2.5		-- Base year ahead penalty
 NDefines.NTechnology.BASE_TECH_COST = 80					-- Base cost for a tech. multiplied with tech cost and ahead of time penalties
 ----------------------------------
+NDefines.NDiplomacy.VOLUNTEERS_PER_TARGET_PROVINCE = 0.5			    -- Volunteer shit to prevent 2w spam
+NDefines.NDiplomacy.VOLUNTEERS_PER_COUNTRY_ARMY = 0.5				    -- Volunteer shit to prevent 2w spam
+NDefines.NDiplomacy.VOLUNTEERS_DIVISIONS_REQUIRED = 1				    -- Volunteer shit to prevent 2w spam
+NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 9999						    -- Unlimited special forces
+NDefines.NCountry.SPECIAL_FORCES_CAP_BASE = 0.00   
 NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 50
 NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 50
 NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 5000
@@ -69,7 +72,11 @@ NDefines.NCountry.NUCLEAR_BOMB_DROP_UNITY_EFFECT_MAX_VP = 1;
 
 -- R56 DEFINES START HERE
 	
-	
+NDefines.NProduction.LICENSE_EQUIPMENT_SPEED_NOT_FACTION = 0
+NDefines.NProduction.LICENSE_EQUIPMENT_TECH_SPEED_PER_YEAR = 0
+NDefines.NProduction.LICENSE_EQUIPMENT_BASE_SPEED = -0.1
+NDefines.NProduction.BASE_LICENSE_IC_COST = 0	
+NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0	
 NDefines.NDiplomacy.LICENSE_ACCEPTANCE_PUPPET_BASE = 20			-- Acceptance modifier for puppets requesting production licenses.
 NDefines.NDiplomacy.LICENSE_ACCEPTANCE_TECH_DIFFERENCE = 2 		-- Acceptance modifier for each year of technology difference.
 NDefines.NDiplomacy.LICENSE_ACCEPTANCE_TECH_DIFFERENCE_BASE = 20    -- Acceptance base for tech difference
@@ -90,8 +97,7 @@ NDefines.NDiplomacy.MAX_OPINION_FROM_VOLUNTEERS = 50				-- Opinion bonus per one
 NDefines.NDiplomacy.OPINION_FOR_DEMO_FROM_WT_GENERATION = -1.0		-- How much less do democracies like us if we generate world tension
 
 
-NDefines.NCountry.SPECIAL_FORCES_CAP_BASE = 0.1
-NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 40
+
 NDefines.NCountry.BASE_RESEARCH_SLOTS = 3
 NDefines.NCountry.FEMALE_UNIT_LEADER_BASE_CHANCE = { 
         -- applies as a factor to female unit leader randomization
@@ -110,7 +116,7 @@ NDefines.NResistance.GARRISON_MANPOWER_LOST_BY_ATTACK = 0.005 	--WAS 0.018 Ratio
 
 NDefines.NPolitics.ARMY_LEADER_MAX_COST = 75				-- max cost BEFORE modifiers
 NDefines.NPolitics.NAVY_LEADER_MAX_COST = 75
-NDefines.NPolitics.BASE_POLITICAL_POWER_INCREASE = 2.25 -- base pp gain per (week)?		
+NDefines.NPolitics.BASE_POLITICAL_POWER_INCREASE = 2.0 -- base pp gain per (week)?		
 
 NDefines.NMilitary.SUPPLY_GRACE = 84 -- 72 3 days as they say and remain hungry for another 12
 
@@ -138,7 +144,7 @@ NDefines.NMilitary.BASE_LEADER_TRAIT_GAIN_XP = 0.4
 NDefines.NMilitary.UNIT_EXPERIENCE_PER_COMBAT_HOUR = 0.000175
 NDefines.NMilitary.FIELD_EXPERIENCE_MAX_PER_DAY = 12
 NDefines.NMilitary.ENCIRCLED_DISBAND_MANPOWER_FACTOR = 0.1
-NDefines.NMilitary.PLAYER_ORDER_PLANNING_DECAY = 0.005
+NDefines.NMilitary.PLAYER_ORDER_PLANNING_DECAY = 0.03
 NDefines.NMilitary.DISBAND_MANPOWER_LOSS = 0.0
 NDefines.NMilitary.PLAN_SPREAD_ATTACK_WEIGHT = 4.1 --AI should concentrate forces more a bit experimental. Increased from 4.0 to combat issues with AI death stacks - SpicyAlfredo
 
@@ -151,8 +157,8 @@ NDefines.NMilitary.NEW_COMMANDER_RANDOM_PERSONALITY_TRAIT_CHANCES = { -- Chances
     0.01,
 }
 
-NDefines.NMilitary.PLANNING_DECAY = 0.04
-NDefines.NMilitary.PLANNING_GAIN = 0.08
+NDefines.NMilitary.PLANNING_DECAY = 0.01
+NDefines.NMilitary.PLANNING_GAIN = 0.02
 
 -- PLAN_SPREAD_ATTACK_WEIGHT = 6.0
 --This is a Trace to make sure mod is taken into account
@@ -397,6 +403,8 @@ NDefines.NAI.DIPLO_PREFER_OTHER_FACTION = -200			-- The country has yet to ask s
 NDefines.NAI.GENERATE_WARGOAL_THREAT_BASELINE = 0.6
 NDefines.NAI.LENDLEASE_FRACTION_OF_PRODUCTION = 0.25 --0.5
 NDefines.NAI.LENDLEASE_FRACTION_OF_STOCKPILE = 0.125 --0.25
+NDefines.NProduction.EQUIPMENT_LEND_LEASE_WEIGHT_FACTOR = 0.005
+NDefines.NCountry.FUEL_LEASE_CONVOY_RATIO = 0.0001
 
 NDefines.NAI.FASCISTS_ALLY_DEMOCRACIES = -150
 NDefines.NAI.FASCISTS_ALLY_COMMUNISTS = -150

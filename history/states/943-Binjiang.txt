@@ -7,10 +7,9 @@ state={
 	manpower=4224174
 	state_category=town
 	history={
-		owner = MAN
-		add_core_of = MAN
+		owner = JAP
+		add_core_of = JAP
 		add_core_of = CHI
-		add_core_of = PRC
 		victory_points = {
 			10433 9
 		}
